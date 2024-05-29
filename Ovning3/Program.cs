@@ -4,10 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Person jane = new Person();
-            jane.LName = "Pettersson";
-            Console.WriteLine(jane.FName);//""
-            Console.WriteLine(jane.LName);//Pettersson
+            try
+            {
+                Person jimmy = new Person(age: -4, 183, 80, "Jimmy", "Bäckström");    
+            }
+            catch (ArgumentException ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Error: " + ex.Message);
+                Console.ResetColor();
+                // ToDo what does throw;
+            }
         }
     }
 }

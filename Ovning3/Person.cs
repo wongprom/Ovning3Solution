@@ -8,37 +8,59 @@ namespace Ovning3
 {
     internal class Person
     {
-        private int age;
-        private string fName = string.Empty;
-        private string lName= string.Empty;
-        private double height;
-        private double weight;
+        //Fields
+        private int _age;
+        private string _fName = string.Empty;
+        private string _lName= string.Empty;
+        private double _height;
+        private double _weight;
 
+        //Constructor
+        public Person(int age, double height, double weight, string firstName, string lastName)
+        {
+            Age = age;
+            Height = height;
+            Weight = weight;
+            FName = firstName;
+            LName = lastName;
+        }
+
+        //Propertys
         public int Age
         { 
-            get { return age; } 
-            set {  age = value; } 
+            get { return _age; } 
+            set
+            {  
+                if( value > 0 )
+                {
+                    _age = value; 
+                }
+                else
+                {
+                    throw new ArgumentException("Age must be greater than 0 (zero).");
+                } 
+            }
         }
         public string FName
         {
-            get { return fName; }
-            set { fName = value; }
+            get { return _fName; }
+            set { _fName = value; }
         }
 
         public string LName
         { 
-            get { return lName; } 
-            set { lName = value; } 
+            get { return _lName; } 
+            set { _lName = value; } 
         }
         public double Height
         {
-            get { return height; }
-            set { height = value; }
+            get { return _height; }
+            set { _height = value; }
         }
         public double Weight
         {
-            get { return weight; }
-            set { weight = value; }
+            get { return _weight; }
+            set { _weight = value; }
         }
     }
 }
