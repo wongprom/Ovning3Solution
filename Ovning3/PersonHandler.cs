@@ -15,16 +15,7 @@ namespace Ovning3
         }
         public void SetAge(Person pers, int age)
         {
-            try 
-            { 
                 pers.Age = age; 
-            } 
-            catch(ArgumentException ex) 
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("SetAge: " + ex.Message);
-                Console.ResetColor();
-            }
         }
         public Person CreatePerson(int age, string fname, string lname, double height, double weight)
         {
