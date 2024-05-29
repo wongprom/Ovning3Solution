@@ -1,6 +1,3 @@
-Här är hela texten korrekt formaterad i markdown:
-
-```markdown
 # C# Övningssamling - Inkapsling, arv och polymorfism
 
 Löpande i uppgifterna finns några kunskapsfrågor (startar med “F:”). Dessa frågor besvaras som kommentarer i koden. Koden behöver inte ta emot input från en användare.
@@ -142,4 +139,4 @@ Löpande i uppgifterna finns några kunskapsfrågor (startar med “F:”). Dess
 18. Hitta ett sätt att skriva ut din nya metod för `Dog` genom en `foreach` på `Animals`.
 
 Lycka till!
-```
+
