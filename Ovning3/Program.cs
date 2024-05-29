@@ -6,7 +6,8 @@
         {
             try
             {
-                Person jimmy = new Person(age: -4, 183, 80, "Jimmy", "Bäckström");    
+                Person peter = new Person(age:3, height:150, weight:50, firstName:"Peter", lastName:"Pett");
+     
             }
             catch (ArgumentException ex)
             {

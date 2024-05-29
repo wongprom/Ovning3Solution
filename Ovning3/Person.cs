@@ -42,15 +42,35 @@ namespace Ovning3
             }
         }
         public string FName
-        {
+        {// ToDo implement Required FName
             get { return _fName; }
-            set { _fName = value; }
+            set 
+            { 
+                if(value.Length >= 2 && value.Length <= 10)
+                {
+                    _fName = value; 
+                }
+                else
+                {
+                    throw new ArgumentException("First name must have min 2 characters AND max 10 characters.");
+                }
+            }
         }
 
         public string LName
-        { 
+        { // ToDo implement Required LName
             get { return _lName; } 
-            set { _lName = value; } 
+            set 
+            {
+                if (value.Length >= 3 && value.Length <= 15)
+                {
+                    _lName = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Last name must have min 3 characters AND max 15 characters.");
+                }
+            } 
         }
         public double Height
         {
