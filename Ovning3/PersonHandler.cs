@@ -8,7 +8,12 @@ namespace Ovning3
 {
     internal class PersonHandler
     {
-        public static void SetAge(Person pers, int age)
+        //Constructor
+        public PersonHandler()
+        {
+            
+        }
+        public void SetAge(Person pers, int age)
         {
             try 
             { 
@@ -18,8 +23,16 @@ namespace Ovning3
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("SetAge: " + ex.Message);
-                Console.ResetColor(); Console.ResetColor();
+                Console.ResetColor();
             }
+        }
+        public Person CreatePerson(int age, string fname, string lname, double height, double weight)
+        {
+            //Skapa en ny instans av person
+            Person kalle = new Person(age, height, weight, fname, lname);
+
+            //returnera personen
+            return kalle;
         }
     }
 }
