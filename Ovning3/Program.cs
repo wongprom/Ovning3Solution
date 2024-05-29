@@ -7,7 +7,7 @@
             try
             {
                 Person peter = new Person(age:3, height:150, weight:50, firstName:"Peter", lastName:"Pett");
-     
+                PersonHandler.SetAge(peter,-4);
             }
             catch (ArgumentException ex)
             {
