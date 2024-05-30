@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,5 +26,10 @@ namespace Ovning3
 
         //Method
         public abstract void DoSound();
+
+        public virtual string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}";
+        }
     }
 }
