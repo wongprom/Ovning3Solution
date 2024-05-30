@@ -33,17 +33,20 @@
                     Console.WriteLine(error.UEMessage());
                 }*/
 
-                List<Print> printList = new List<Print>();
-                Print printOne = new PrintOne();
-                Print printTwo = new PrintTwo();
-                Print printThree = new PrintThree();
-                printList.Add(printOne);
-                printList.Add(printTwo);
-                printList.Add(printThree);
-                foreach (Print print in printList)
-                {
-                    Console.Write(print.PrintThis());
-                }
+                /* List<Print> printList = new List<Print>();
+                 Print printOne = new PrintOne();
+                 Print printTwo = new PrintTwo();
+                 Print printThree = new PrintThree();
+                 printList.Add(printOne);
+                 printList.Add(printTwo);
+                 printList.Add(printThree);
+                 foreach (Print print in printList)
+                 {
+                     Console.Write(print.PrintThis());
+                 }*/
+
+                Wolfman wolf = new("jimmy", 34, 34, true);
+                wolf.Talk();
             }
             catch (ArgumentException ex)
             {

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ovning3
 {
-    internal interface IPerson
+    public interface IPerson
     {
-        public void Talk()
-        {
-
-        }
+        public abstract string Talk();
     }
 }
