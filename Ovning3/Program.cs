@@ -12,16 +12,26 @@
                 //personHandler.DisplayPersonDetails(peter);
 
                 Person kalle = personHandler.CreatePerson(23, "Kalle", "Anka", 120, 50);
-                personHandler.DisplayPersonDetails(kalle);
+                //personHandler.DisplayPersonDetails(kalle);
 
                 Person fredrik = personHandler.CreatePerson();
-                personHandler.DisplayPersonDetails(fredrik);
+                //personHandler.DisplayPersonDetails(fredrik);
                 personHandler.SetFName(fredrik, "Fredrik");
                 personHandler.SetLName(fredrik, "Fredriksson");
                 personHandler.SetAge(fredrik, 15);
                 personHandler.SetHeight(fredrik, 174);
                 personHandler.SetWeight(fredrik, 102);
-                personHandler.DisplayPersonDetails(fredrik);
+                //personHandler.DisplayPersonDetails(fredrik);
+
+                List<UseError> errorList = new List<UseError>();
+                NumericInputError numericInputError = new NumericInputError();
+                TextInputError textInputError = new TextInputError();
+                errorList.Add(numericInputError);
+                errorList.Add(textInputError);
+                foreach (UseError error in errorList)
+                {
+                    Console.WriteLine(error.UEMessage());
+                }
             }
             catch (ArgumentException ex)
             {
