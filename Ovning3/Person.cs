@@ -16,6 +16,10 @@ namespace Ovning3
         private double _weight;
 
         //Constructor
+        public Person()
+        {
+         
+        }
         public Person(int age, double height, double weight, string firstName, string lastName)
         {
             Age = age;
