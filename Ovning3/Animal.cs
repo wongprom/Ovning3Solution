@@ -12,6 +12,8 @@ namespace Ovning3
         public int Age { get; set; }
         public double Weight { get; set; }
 
+        // Add more Attributes for all Animals 
+
         //Constructor
         public Animal(string name, int age, double weight) 
         { 
