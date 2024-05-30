@@ -23,7 +23,7 @@
                 personHandler.SetWeight(fredrik, 102);
                 //personHandler.DisplayPersonDetails(fredrik);
 
-                List<UseError> errorList = new List<UseError>();
+                /*List<UseError> errorList = new List<UseError>();
                 NumericInputError numericInputError = new NumericInputError();
                 TextInputError textInputError = new TextInputError();
                 errorList.Add(numericInputError);
@@ -31,6 +31,18 @@
                 foreach (UseError error in errorList)
                 {
                     Console.WriteLine(error.UEMessage());
+                }*/
+
+                List<Print> printList = new List<Print>();
+                Print printOne = new PrintOne();
+                Print printTwo = new PrintTwo();
+                Print printThree = new PrintThree();
+                printList.Add(printOne);
+                printList.Add(printTwo);
+                printList.Add(printThree);
+                foreach (Print print in printList)
+                {
+                    Console.Write(print.PrintThis());
                 }
             }
             catch (ArgumentException ex)
