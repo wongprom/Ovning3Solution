@@ -71,7 +71,10 @@ namespace Ovning3
 
                 foreach (Animal animal in animalsList)
                 {
-                    Console.WriteLine(animal);
+                    if(animal is IPerson test)
+                    {
+                        test.Talk();
+                    }
                     animal.DoSound();
                 }
 
