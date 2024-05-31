@@ -45,8 +45,12 @@
                      Console.Write(print.PrintThis());
                  }*/
 
-                Wolfman wolf = new("jimmy", 34, 34, true);
+                Wolfman wolf = new Wolfman("jimmy", 34, 34, true);
                 wolf.Talk();
+
+                List<Animal> animals = new List<Animal>();
+                Swan svan = new Swan("Svan", 23, 3, 2, true);
+
             }
             catch (ArgumentException ex)
             {

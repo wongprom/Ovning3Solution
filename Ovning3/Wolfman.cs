@@ -11,13 +11,9 @@ namespace Ovning3
         public Wolfman(string name, int age, double weight, bool hasPack) : base(name, age, weight, hasPack)
         {
         }
-
-        //ToDo!!! cant make Talk to work
-        public string Talk()
+        public void Talk()
         {
-            return "I am Wolfman!!";
+             Console.WriteLine("WolfMan Talksr");
         }
-
-
     }
 }

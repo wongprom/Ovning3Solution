@@ -8,6 +8,6 @@ namespace Ovning3
 {
     public interface IPerson
     {
-        public abstract string Talk();
+        void Talk();
     }
 }
