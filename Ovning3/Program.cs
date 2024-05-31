@@ -33,14 +33,10 @@ namespace Ovning3
 
                 foreach (Animal animal in animalsList)
                 {
-                    var stats = animal.Stats();
-                    Console.WriteLine(stats);
-
-                    if (animal is Dog objDog)
+                    if (animal is Pelican objPelican)
                     {
-                        Console.WriteLine(objDog.Stats());
+                        Console.WriteLine(objPelican.Stats());
                     }
-                    
                 }
             }
             catch (ArgumentException ex)

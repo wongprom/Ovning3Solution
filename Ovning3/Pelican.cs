@@ -13,5 +13,10 @@ namespace Ovning3
         {
             IsDivingForFood = isDivingForFood;
         }
+
+        public override string Stats()
+        {
+            return $"{base.Stats()} IsDivingForFood: {IsDivingForFood}";
+        }
     }
 }
