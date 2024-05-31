@@ -33,6 +33,7 @@ namespace Ovning3
 
                 foreach (Animal animal in animalsList)
                 {
+                    //animal.SomeMethod(); // Does not work because not all instances of Animal has SomeMethod().
                     if (animal is Dog objDog)
                     {
                         Console.WriteLine(objDog.SomeMethod());
