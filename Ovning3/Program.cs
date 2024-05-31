@@ -9,18 +9,39 @@ namespace Ovning3
                 PersonHandler personHandler = new PersonHandler();
             try
             {
-               
+                List<Animal> animalsList = new List<Animal>();
+                Wolfman wolfMan = new Wolfman("jimmy", 34, 34, true);
+                Swan svan = new Swan("Svan", 23, 3, 2, true);
+                Flamingo flamingo = new Flamingo("flam", 1, 2, 3, false);
+                Wolf wolf = new Wolf("wolf", 3, 200, true);
+                Pelican pelican = new Pelican("pelican", 3, 3, 4, false);
+                Bird bird = new Bird("Bird", 3, 4, 2);
+                Worm worm = new Worm("worm", 3, 34, false);
+                Hedgehog hedgehog = new Hedgehog("Hedgehog", 3, 45, 2);
+                Animal dog = new Dog("dog", 3, 3, false);
+                Horse horse = new Horse("Horse", 2, 2, true);
+                animalsList.Add(wolfMan);
+                animalsList.Add(worm);
+                animalsList.Add(svan);
+                animalsList.Add(flamingo);
+                animalsList.Add(wolf);
+                animalsList.Add(bird);
+                animalsList.Add(pelican);
+                animalsList.Add(hedgehog);
+                animalsList.Add(dog);
+                animalsList.Add(horse);
 
-                List<Object> listForAllTypes = new List<Object>();
-                Horse horse = new Horse("Horse", 2,2,true);
-                Person peter = new Person(age: 3, height: 150, weight: 50, firstName: "Peter", lastName: "Pett");
-                TextInputError inputError = new TextInputError();
-                listForAllTypes.Add(horse);
-                listForAllTypes.Add(peter);
-                listForAllTypes.Add(inputError);
-                
+                foreach (Animal animal in animalsList)
+                {
+                    var stats = animal.Stats();
+                    Console.WriteLine(stats);
 
-
+                    if (animal is Dog objDog)
+                    {
+                        Console.WriteLine(objDog.Stats());
+                    }
+                    
+                }
             }
             catch (ArgumentException ex)
             {

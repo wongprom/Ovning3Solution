@@ -18,6 +18,10 @@ namespace Ovning3
         public override void DoSound()
         {
             Console.WriteLine("bark bark");
+        }  
+        public override string Stats()
+        {
+            return $"{base.Stats()} IsAll: {IsAllergyFriendly}";
         }
     }
 }

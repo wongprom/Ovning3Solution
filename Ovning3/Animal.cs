@@ -26,7 +26,7 @@ namespace Ovning3
 
         //Method
         public abstract void DoSound();
-
+        // Todo Why cant I run Stats on instance of Animal?
         public virtual string Stats()
         {
             return $"Name: {Name}, Age: {Age}, Weight: {Weight}";
