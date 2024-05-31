@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ovning3
 {
-    abstract class UseError
+    public class UseError
     {
         public virtual string UEMessage()
         {
