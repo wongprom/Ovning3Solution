@@ -23,5 +23,10 @@ namespace Ovning3
         {
             return $"{base.Stats()} IsAll: {IsAllergyFriendly}";
         }
+
+        public string SomeMethod()
+        {
+            return "Something from class Dog";
+        }
     }
 }
