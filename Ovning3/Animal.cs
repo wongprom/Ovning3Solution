@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ovning3.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Ovning3
 {
-    abstract class Animal
+    abstract class Animal : IAnimal
     {
         public string Name { get; set; } = string.Empty;
         public int Age { get; set; }
