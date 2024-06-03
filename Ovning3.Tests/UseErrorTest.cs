@@ -14,6 +14,7 @@ namespace Ovning3.Tests
 
             //Assert
             Assert.True(result == expected);
+            Assert.IsType<string>(result);
         }
     }
 }
