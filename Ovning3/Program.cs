@@ -45,7 +45,6 @@ namespace Ovning3
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error: " + ex.Message);
                 Console.ResetColor();
-                // ToDo what does throw;
             }
         }
     }
